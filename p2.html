@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashing Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.2s ease;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 3em;
+      font-family: Arial, sans-serif;
+      text-shadow: 2px 2px 5px black;
+    }
+  </style>
+</head>
+<body>
+  <h1>NU UITA</h1>
+    <img src="maps.png" width="400" height="200"/>
+    <img src="dog.webp" width="400" height="200"/>
+    <audio type="audio/mp3" src="aa.mp3" autoplay loop>
+  <script>
+    const colors = ['red', 'black', 'white'];
+    let i = 0;
+
+    setInterval(() => {
+      document.body.style.backgroundColor = colors[i % colors.length];
+      i++;
+    }, 100);
+  </script>
+</body>
+</html>
